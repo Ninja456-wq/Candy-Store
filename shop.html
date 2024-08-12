@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Candy Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Include your script file -->
+</head>
+<body>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6f61;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #666;
+        }
+        .product button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #e55b50;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+    <header>
+        <h1>Shop Our Candy</h1>
+    </header>
+
+   <nav>
+    <a href="home.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+</nav>
+
+    <div class="container product-grid">
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4mZJb0gUW3Pkn5IJz6rlQ1mWpiRAmflM1aX_oZadSK2cmhLnf_Fd4hp4lNxCra3M8x10STWqeS-Ox0VDWJQUP_GyF2xwAa2A-Q1QEU8RkWMi6eKhjA6ci6RMsSnMo8g&usqp=CAc/150" alt="Candy 1">
+            <h3>Chocolate Bar</h3>
+            <p>$2.99</p>
+            <button onclick="addToCart('Chocolate Bar', 2.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiR2dis2eqHAxUwH60GHZauBN4YABAfGgJwdg&co=1&ase=2&gclid=Cj0KCQjwn9y1BhC2ARIsAG5IY-62HQrgF-nyNxQA_vCCFI1ckVpHPdK6pvD6oO-2na_cNnp4aHL56aQaAkoAEALw_wcB&ohost=www.google.com&cid=CAESVeD2b8tapD9cohrMmkXf4WgxP7Vm8ARx5uqiPcFn09AiXlUGv81eHKme4He4xD-P31nGx3NC3IHvSOgs7oZa0PPNgG7t8xhxRHsASpxLxi4qfZLUoRo&sig=AOD64_2b4_k9rPHzgPUlCDad7QdX52xJdQ&ctype=46&q=&ved=2ahUKEwiq_NGs2eqHAxXzI0QIHWQEDxkQ9aACKAB6BAgEECE&adurl=/150" alt="Candy 2">
+            <h3>Gummy Bears</h3>
+            <p>$1.99</p>
+            <button onclick="addToCart('Gummy Bears', 1.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Candy 3">
+            <h3>Lollipop</h3>
+            <p>$0.99</p>
+            <button onclick="addToCart('Lollipop', 0.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src = https://via.placeholder.com/150" alt="Candy 4">
+            <h3>Jolly Ranchers</h3>
+            <p>$4.00<<p>
+                <button onclick="addToCart('lollipop',4.00)">Add to Cart</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Candy Store. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
